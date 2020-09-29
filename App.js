@@ -9,7 +9,7 @@ export default function App() {
 
   return (
     <Container style={styles.Container}>
-      {!userName ? <Login /> : <Chat />}
+      {!userName ? <Login setUserName={setUserName} /> : <Chat />}
     </Container>
   );
 }
